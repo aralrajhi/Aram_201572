@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="5dip"
+    tools:context=".Activities.MainActivity">
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/cloud"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"/>
+                <TextView
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:id="@+id/txtWeather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtlblName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginEnd="10dip"
+            android:layout_marginBottom="10dip"
+            android:text="Aram AlRajhi 201572"
+            android:textColor="@color/purple_700"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:id="@+id/ll"
+           android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <Button
+                    android:textSize="14sp"
+                    android:text="Firebase"
+                    android:id="@+id/btnFirebase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:textSize="14sp"
+                    android:text="SQLite"
+                    android:id="@+id/btnSqlite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:textSize="14sp"
+                    android:text="Weather"
+                    android:id="@+id/btnWeather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+</RelativeLayout>
